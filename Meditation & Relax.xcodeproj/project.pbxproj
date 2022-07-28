@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0248D092892CDE6002A9556 /* Meditation___RelaxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D082892CDE6002A9556 /* Meditation___RelaxApp.swift */; };
-		D0248D0B2892CDE6002A9556 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D0A2892CDE6002A9556 /* ContentView.swift */; };
+		D0248D092892CDE6002A9556 /* Meditation-RelaxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D082892CDE6002A9556 /* Meditation-RelaxApp.swift */; };
+		D0248D0B2892CDE6002A9556 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D0A2892CDE6002A9556 /* MeditationView.swift */; };
 		D0248D0D2892CDE7002A9556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0248D0C2892CDE7002A9556 /* Assets.xcassets */; };
 		D0248D102892CDE7002A9556 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0248D0F2892CDE7002A9556 /* Preview Assets.xcassets */; };
 		D0248D1A2892CDE7002A9556 /* Meditation___RelaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D192892CDE7002A9556 /* Meditation___RelaxTests.swift */; };
@@ -35,8 +35,8 @@
 
 /* Begin PBXFileReference section */
 		D0248D052892CDE6002A9556 /* Meditation & Relax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meditation & Relax.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0248D082892CDE6002A9556 /* Meditation___RelaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meditation___RelaxApp.swift"; sourceTree = "<group>"; };
-		D0248D0A2892CDE6002A9556 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D0248D082892CDE6002A9556 /* Meditation-RelaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meditation-RelaxApp.swift"; sourceTree = "<group>"; };
+		D0248D0A2892CDE6002A9556 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		D0248D0C2892CDE7002A9556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0248D0F2892CDE7002A9556 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0248D152892CDE7002A9556 /* Meditation & RelaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meditation & RelaxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +94,8 @@
 		D0248D072892CDE6002A9556 /* Meditation & Relax */ = {
 			isa = PBXGroup;
 			children = (
-				D0248D082892CDE6002A9556 /* Meditation___RelaxApp.swift */,
-				D0248D0A2892CDE6002A9556 /* ContentView.swift */,
+				D0248D082892CDE6002A9556 /* Meditation-RelaxApp.swift */,
+				D0248D0A2892CDE6002A9556 /* MeditationView.swift */,
 				D0248D0C2892CDE7002A9556 /* Assets.xcassets */,
 				D0248D0E2892CDE7002A9556 /* Preview Content */,
 			);
@@ -257,8 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0248D0B2892CDE6002A9556 /* ContentView.swift in Sources */,
-				D0248D092892CDE6002A9556 /* Meditation___RelaxApp.swift in Sources */,
+				D0248D0B2892CDE6002A9556 /* MeditationView.swift in Sources */,
+				D0248D092892CDE6002A9556 /* Meditation-RelaxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

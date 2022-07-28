@@ -8,6 +8,7 @@ struct MeditationView: View {
                 .resizable()
                 .scaledToFill()
             .frame(height: UIScreen.main.bounds.height/3)
+            .offset(y: 40)
             
             // MARK: Meditation Details:
             ZStack {
@@ -27,6 +28,20 @@ struct MeditationView: View {
                     .textCase(.uppercase)
                     .opacity(0.7)
                  
+                    Button {
+                        
+                    } label: {
+                        Label("Play",systemImage: "play.fill")
+                            .font(.headline)
+                            .foregroundColor(.black)
+                            .padding(.vertical,10)
+                            .frame(maxWidth: .infinity)
+                            .background(.white)
+                            .cornerRadius(20)
+                        
+                    }
+
+                    
                 // MARK: Tilte
                     Text("1 Minute Relx and Meditation")
                         .font(.title)

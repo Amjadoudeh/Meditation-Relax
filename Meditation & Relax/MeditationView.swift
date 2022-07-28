@@ -22,8 +22,23 @@ struct MeditationView: View {
                         
                         Text("0s")
                     }
-                    .foregroundColor(.white)
+                    
+                    .font(.subheadline)
+                    .textCase(.uppercase)
+                    .opacity(0.7)
+                 
+                // MARK: Tilte
+                    Text("1 Minute Relx and Meditation")
+                        .font(.title)
+                    
+                
+                // MARK: Description
+                    Text("Clear your mind and take a moment for your self, allow your soul to fly in the space!")
+                    
+                    Spacer()
                 }
+                .foregroundColor(.white)
+                .padding(20)
             }
         }
         .ignoresSafeArea()

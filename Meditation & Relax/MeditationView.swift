@@ -5,7 +5,7 @@ struct MeditationView: View {
         Image("yoga")
             .resizable()
             .scaledToFill()
-            .ignoresSafeArea()
+            .frame(height: UIScreen.main.bounds.height/3)
     }
 }
 

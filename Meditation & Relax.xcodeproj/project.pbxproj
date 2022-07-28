@@ -14,6 +14,7 @@
 		D0248D1A2892CDE7002A9556 /* Meditation___RelaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D192892CDE7002A9556 /* Meditation___RelaxTests.swift */; };
 		D0248D242892CDE7002A9556 /* Meditation___RelaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D232892CDE7002A9556 /* Meditation___RelaxUITests.swift */; };
 		D0248D262892CDE7002A9556 /* Meditation___RelaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D252892CDE7002A9556 /* Meditation___RelaxUITestsLaunchTests.swift */; };
+		D0248D3428932EB3002A9556 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D3328932EB3002A9556 /* PlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D0248D1F2892CDE7002A9556 /* Meditation & RelaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meditation & RelaxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0248D232892CDE7002A9556 /* Meditation___RelaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meditation___RelaxUITests.swift"; sourceTree = "<group>"; };
 		D0248D252892CDE7002A9556 /* Meditation___RelaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meditation___RelaxUITestsLaunchTests.swift"; sourceTree = "<group>"; };
+		D0248D3328932EB3002A9556 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,8 @@
 		D0248D072892CDE6002A9556 /* Meditation & Relax */ = {
 			isa = PBXGroup;
 			children = (
+				D0248D3228932EA1002A9556 /* View */,
 				D0248D082892CDE6002A9556 /* Meditation-RelaxApp.swift */,
-				D0248D0A2892CDE6002A9556 /* MeditationView.swift */,
 				D0248D0C2892CDE7002A9556 /* Assets.xcassets */,
 				D0248D0E2892CDE7002A9556 /* Preview Content */,
 			);
@@ -125,6 +127,15 @@
 				D0248D252892CDE7002A9556 /* Meditation___RelaxUITestsLaunchTests.swift */,
 			);
 			path = "Meditation & RelaxUITests";
+			sourceTree = "<group>";
+		};
+		D0248D3228932EA1002A9556 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0248D0A2892CDE6002A9556 /* MeditationView.swift */,
+				D0248D3328932EB3002A9556 /* PlayView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0248D3428932EB3002A9556 /* PlayView.swift in Sources */,
 				D0248D0B2892CDE6002A9556 /* MeditationView.swift in Sources */,
 				D0248D092892CDE6002A9556 /* Meditation-RelaxApp.swift in Sources */,
 			);

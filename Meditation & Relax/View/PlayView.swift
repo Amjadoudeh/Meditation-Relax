@@ -1,10 +1,3 @@
-//
-//  PlayView.swift
-//  Meditation & Relax
-//
-//  Created by Amjad Oudeh on 28.07.22.
-//
-
 import SwiftUI
 
 struct PlayView: View {
@@ -18,6 +11,13 @@ struct PlayView: View {
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width)
                 .ignoresSafeArea()
+            
+            // MARK: Blur view
+            Rectangle()
+                .background(.ultraThinMaterial)
+                .opacity(0.25)
+                .ignoresSafeArea()
+            
             
             // MARK: Dismiss Button
             VStack(spacing: 32) {

@@ -43,9 +43,18 @@ struct PlayView: View {
                 Spacer()
                 
                 VStack(spacing: 10) {
-                    // MARK: Player timeline
+                    // MARK: Playback timeline
                     Slider(value: $value, in: 0...60)
                         .accentColor(.white)
+                    
+                   // MARK: Playback time
+                    HStack {
+                        Text("0:00")
+                        Spacer()
+                        Text("1:00")
+                    }
+                    .foregroundColor(.white)
+                    .font(.caption)
                 }
                 .padding(20)
             }

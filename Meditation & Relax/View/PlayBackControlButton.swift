@@ -1,10 +1,3 @@
-//
-//  PlayControllVButton.swift
-//  Meditation & Relax
-//
-//  Created by Amjad Oudeh on 29.07.22.
-//
-
 import SwiftUI
 
 struct PlayBackControlButton: View {

@@ -2,7 +2,7 @@ import SwiftUI
 
 struct PlayView: View {
     @State private var value: Double = 0.0
-    
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack {
             // MARK: Background Image
@@ -25,7 +25,7 @@ struct PlayView: View {
                     Spacer()
                     
                     Button {
-                        
+                        dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
                             .font(.system(size: 36))

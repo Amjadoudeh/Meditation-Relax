@@ -15,6 +15,7 @@
 		D0248D242892CDE7002A9556 /* Meditation___RelaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D232892CDE7002A9556 /* Meditation___RelaxUITests.swift */; };
 		D0248D262892CDE7002A9556 /* Meditation___RelaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D252892CDE7002A9556 /* Meditation___RelaxUITestsLaunchTests.swift */; };
 		D0248D3428932EB3002A9556 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0248D3328932EB3002A9556 /* PlayView.swift */; };
+		D071E40F289458B9009D88E2 /* PlayBackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071E40E289458B9009D88E2 /* PlayBackControlButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		D0248D232892CDE7002A9556 /* Meditation___RelaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meditation___RelaxUITests.swift"; sourceTree = "<group>"; };
 		D0248D252892CDE7002A9556 /* Meditation___RelaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meditation___RelaxUITestsLaunchTests.swift"; sourceTree = "<group>"; };
 		D0248D3328932EB3002A9556 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		D071E40E289458B9009D88E2 /* PlayBackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBackControlButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				D0248D0A2892CDE6002A9556 /* MeditationView.swift */,
 				D0248D3328932EB3002A9556 /* PlayView.swift */,
+				D071E40E289458B9009D88E2 /* PlayBackControlButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0248D3428932EB3002A9556 /* PlayView.swift in Sources */,
+				D071E40F289458B9009D88E2 /* PlayBackControlButton.swift in Sources */,
 				D0248D0B2892CDE6002A9556 /* MeditationView.swift in Sources */,
 				D0248D092892CDE6002A9556 /* Meditation-RelaxApp.swift in Sources */,
 			);

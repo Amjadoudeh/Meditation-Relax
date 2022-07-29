@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PlayView: View {
+    @State private var value: Double = 0.0
+    
     var body: some View {
         ZStack {
             // MARK: Background Image
@@ -20,15 +22,15 @@ struct PlayView: View {
             // MARK: Dismiss Button
             VStack(spacing: 32) {
                 HStack{
+                    Spacer()
+                    
                     Button {
                         
                     } label: {
                         Image(systemName: "xmark.circle.fill")
                             .font(.system(size: 36))
-                            
+                        
                     }
-                    Spacer()
-                   
                 }
                 .padding(20)
                 .foregroundColor(.white)
@@ -39,13 +41,20 @@ struct PlayView: View {
                     .foregroundColor(.white)
                 
                 Spacer()
+                
+                VStack(spacing: 10) {
+                    // MARK: Player timeline
+                    Slider(value: $value, in: 0...60)
+                        .accentColor(.white)
+                }
+                .padding(20)
             }
         }
     }
-}
-
-struct PlayView_Previews: PreviewProvider {
-    static var previews: some View {
-        PlayView()
+    
+    struct PlayView_Previews: PreviewProvider {
+        static var previews: some View {
+            PlayView()
+        }
     }
 }

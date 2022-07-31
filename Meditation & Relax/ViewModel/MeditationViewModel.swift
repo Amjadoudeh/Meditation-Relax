@@ -1,5 +1,12 @@
 import Foundation
 
+final class MeditationViewModel: ObservableObject {
+    private(set) var meditation: Meditation
+    
+    init(meditation: Meditation) {
+        self.meditation = meditation
+    }
+}
 struct Meditation {
     let id = UUID()
     let title: String

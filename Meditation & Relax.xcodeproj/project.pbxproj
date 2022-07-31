@@ -16,6 +16,7 @@
 		D071E4132896DB93009D88E2 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071E4122896DB93009D88E2 /* MeditationViewModel.swift */; };
 		D071E4162896E550009D88E2 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071E4152896E550009D88E2 /* DateFormatter.swift */; };
 		D071E4182896EA8E009D88E2 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071E4172896EA8E009D88E2 /* AudioManager.swift */; };
+		D071E41A2896F021009D88E2 /* meditation1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D071E4192896F021009D88E2 /* meditation1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		D071E4122896DB93009D88E2 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
 		D071E4152896E550009D88E2 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		D071E4172896EA8E009D88E2 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		D071E4192896F021009D88E2 /* meditation1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				D0248D3228932EA1002A9556 /* View */,
 				D0248D082892CDE6002A9556 /* Meditation-RelaxApp.swift */,
 				D0248D0C2892CDE7002A9556 /* Assets.xcassets */,
+				D071E4192896F021009D88E2 /* meditation1.mp3 */,
 				D0248D0E2892CDE7002A9556 /* Preview Content */,
 			);
 			path = "Meditation & Relax";
@@ -253,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D071E41A2896F021009D88E2 /* meditation1.mp3 in Resources */,
 				D0248D102892CDE7002A9556 /* Preview Assets.xcassets in Resources */,
 				D0248D0D2892CDE7002A9556 /* Assets.xcassets in Resources */,
 			);

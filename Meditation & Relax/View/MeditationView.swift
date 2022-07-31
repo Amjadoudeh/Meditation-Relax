@@ -6,7 +6,7 @@ struct MeditationView: View {
     var body: some View {
         VStack(spacing: 0) {
             // MARK: Image:
-            Image("yoga")
+            Image(meditationVM.meditation.image)
                 .resizable()
                 .scaledToFill()
             .frame(height: UIScreen.main.bounds.height/3)
@@ -23,7 +23,7 @@ struct MeditationView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Music")
                         
-                        Text("0s")
+                        Text(meditationVM.meditation.duration.formatted() + "S")
                     }
                     
                     .font(.subheadline)
@@ -45,12 +45,12 @@ struct MeditationView: View {
 
                     
                 // MARK: Tilte
-                    Text("1 Minute Relx and Meditation")
+                    Text(meditationVM.meditation.title)
                         .font(.title)
                     
                 
                 // MARK: Description
-                    Text("Clear your mind and take a moment for your self, allow your soul to fly in the space!")
+                    Text(meditationVM.meditation.description)
                     
                     Spacer()
                 }

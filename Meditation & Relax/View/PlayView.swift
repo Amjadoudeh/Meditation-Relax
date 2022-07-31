@@ -1,12 +1,14 @@
 import SwiftUI
 
 struct PlayView: View {
+    var meditationVM: MeditationViewModel
+    
     @State private var value: Double = 0.0
     @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack {
             // MARK: Background Image
-            Image("yoga")
+            Image(meditationVM.meditation.image)
                 .resizable()
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width)
@@ -36,7 +38,7 @@ struct PlayView: View {
                 .foregroundColor(.white)
                 
                 // MARK: Title
-                Text("1 Minute Relx and Meditation")
+                Text(meditationVM.meditation.title)
                     .font(.title)
                     .foregroundColor(.white)
                 
@@ -89,8 +91,9 @@ struct PlayView: View {
     }
     
     struct PlayView_Previews: PreviewProvider {
+        static let meditationVM = MeditationViewModel(meditation: Meditation.data)
         static var previews: some View {
-            PlayView()
+            PlayView(meditationVM: meditationVM)
         }
     }
 }

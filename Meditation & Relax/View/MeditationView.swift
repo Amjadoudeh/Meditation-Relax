@@ -60,7 +60,7 @@ struct MeditationView: View {
         }
         .ignoresSafeArea()
         .fullScreenCover(isPresented: $showPlayer) {
-            PlayView()
+            PlayView(meditationVM: meditationVM)
         }
     }
 }

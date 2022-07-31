@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MeditationView: View {
+    @StateObject var meditationVM: MeditationViewModel
     @State private var showPlayer = false
     var body: some View {
         VStack(spacing: 0) {
@@ -44,7 +45,7 @@ struct MeditationView: View {
 
                     
                 // MARK: Tilte
-                    Text("1 Minute of Relx and Meditation")
+                    Text("1 Minute Relx and Meditation")
                         .font(.title)
                     
                 
@@ -65,7 +66,9 @@ struct MeditationView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let meditationVM = MeditationViewModel(meditation: Meditation.data)
+    
     static var previews: some View {
-        MeditationView()
+        MeditationView(meditationVM: meditationVM)
     }
 }

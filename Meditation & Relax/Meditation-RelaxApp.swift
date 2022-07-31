@@ -6,7 +6,7 @@ import SwiftUI
 struct MeditationRelaxApp : App {
     var body: some Scene {
         WindowGroup {
-            MeditationView()
+            MeditationView(meditationVM: MeditationViewModel(meditation: Meditation.data))
         }
     }
 }

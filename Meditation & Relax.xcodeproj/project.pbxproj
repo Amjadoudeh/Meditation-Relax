@@ -50,6 +50,7 @@
 		D071E4152896E550009D88E2 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		D071E4172896EA8E009D88E2 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		D071E4192896F021009D88E2 /* meditation1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation1.mp3; sourceTree = "<group>"; };
+		D071E41B2896F11C009D88E2 /* Meditation---Relax-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Meditation---Relax-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +99,7 @@
 		D0248D072892CDE6002A9556 /* Meditation & Relax */ = {
 			isa = PBXGroup;
 			children = (
+				D071E41B2896F11C009D88E2 /* Meditation---Relax-Info.plist */,
 				D071E4142896E52B009D88E2 /* Extension */,
 				D071E4112896DB67009D88E2 /* Model */,
 				D071E4102896DB5C009D88E2 /* ViewModel */,
@@ -448,6 +450,7 @@
 				DEVELOPMENT_TEAM = P569KTXYRS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Meditation---Relax-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -477,6 +480,7 @@
 				DEVELOPMENT_TEAM = P569KTXYRS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Meditation---Relax-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -49,7 +49,7 @@ struct PlayView: View {
                     Slider(value: $value, in: 0...60)
                         .accentColor(.white)
                     
-                   // MARK: Playback time
+                    // MARK: Playback time
                     HStack {
                         Text("0:00")
                         Spacer()
@@ -87,6 +87,9 @@ struct PlayView: View {
                 }
                 .padding(20)
             }
+        }
+        .onAppear{
+            AudioManager.shared.startPlayer(track: meditationVM.meditation.track)
         }
     }
     

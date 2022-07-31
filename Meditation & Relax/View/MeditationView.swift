@@ -44,7 +44,7 @@ struct MeditationView: View {
 
                     
                 // MARK: Tilte
-                    Text("1 Minute Relx and Meditation")
+                    Text("1 Minute of Relx and Meditation")
                         .font(.title)
                     
                 

@@ -81,22 +81,23 @@ struct PlayView: View {
                             Spacer()
                             // MARK: Backward Button
                             PlayBackControlButton(systemName: "gobackward.10") {
-                                
+                                player.currentTime -= 10
                             }
                             Spacer()
                             // MARK: play Button
-                            PlayBackControlButton(systemName: player.isPlaying ? "pause.circle.fill" : "play.circle.fill",fontSize: 44) {
+                            PlayBackControlButton(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill",fontSize: 44) {
                                 audioManager.playPause()
                             }
                             Spacer()
                             // MARK: Forward Button
                             PlayBackControlButton(systemName: "goforward.10") {
-                                
+                                player.currentTime += 10
                             }
                             Spacer()
                             // MARK: Stop Button
                             PlayBackControlButton(systemName: "stop.fill") {
                                 audioManager.stop()
+                                dismiss()
                             }
                         }
                     }

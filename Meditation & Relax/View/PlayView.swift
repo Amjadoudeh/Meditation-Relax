@@ -98,6 +98,10 @@ struct PlayView: View {
         .onAppear{
             audioManager.startPlayer(track: meditationVM.meditation.track, isPreview: isPreview)
         }
+        .onReceive(timer) { _ in
+            guard let player = audioManager.player else { return }
+            value = player.currentTime
+        }
     }
     
     struct PlayView_Previews: PreviewProvider {

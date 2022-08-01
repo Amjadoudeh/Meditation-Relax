@@ -53,7 +53,12 @@ struct PlayView: View {
                 if let player = audioManager.player {
                     VStack(spacing: 10) {
                         // MARK: Playback timeline
-                        Slider(value: $value, in: 0...player.duration)
+                        Slider(value: $value, in: 0...player.duration) { editing in
+                            print("editing", editing)
+                            if !editing {
+                                player.currentTime = value
+                            } 
+                        }
                             .accentColor(.white)
                         
                         // MARK: Playback time

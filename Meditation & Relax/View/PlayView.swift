@@ -75,8 +75,9 @@ struct PlayView: View {
                         
                         HStack{
                             // MARK: Repeat Button
-                            PlayBackControlButton(systemName: "repeat") {
-                                
+                            let color: Color = audioManager.isLooping ? .orange : .white
+                            PlayBackControlButton(systemName: "repeat",color: color) {
+                                audioManager.toggleLoop()
                             }
                             Spacer()
                             // MARK: Backward Button

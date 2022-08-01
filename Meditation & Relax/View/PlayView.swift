@@ -84,8 +84,8 @@ struct PlayView: View {
                             }
                             Spacer()
                             // MARK: play Button
-                            PlayBackControlButton(systemName: "play.circle.fill",fontSize: 44) {
-                                
+                            PlayBackControlButton(systemName: player.isPlaying ? "pause.circle.fill" : "play.circle.fill",fontSize: 44) {
+                                audioManager.playPause()
                             }
                             Spacer()
                             // MARK: Forward Button

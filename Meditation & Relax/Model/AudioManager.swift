@@ -37,6 +37,5 @@ final class AudioManager: ObservableObject {
         } else {
             player.play()
         }
-
     }
 }

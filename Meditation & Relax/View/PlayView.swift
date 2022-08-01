@@ -50,50 +50,52 @@ struct PlayView: View {
                     .foregroundColor(.white)
                 
                 Spacer()
-                
-                VStack(spacing: 10) {
-                    // MARK: Playback timeline
-                    Slider(value: $value, in: 0...60)
-                        .accentColor(.white)
-                    
-                    // MARK: Playback time
-                    HStack {
-                        Text("0:00")
-                        Spacer()
-                        Text("1:00")
+                if let player = audioManager.player {
+                    VStack(spacing: 10) {
+                        // MARK: Playback timeline
+                        Slider(value: $value, in: 0...player.duration)
+                            .accentColor(.white)
+                        
+                        // MARK: Playback time
+                        HStack {
+                            Text("0:00")
+                            Spacer()
+                            Text("\(DateComponentsFormatter.abbreviated.string(from: player.duration) ?? "0")")
+                        }
+                        .foregroundColor(.white)
+                        .font(.caption)
+                        
+                        HStack{
+                            // MARK: Repeat Button
+                            PlayBackControlButton(systemName: "repeat") {
+                                
+                            }
+                            Spacer()
+                            // MARK: Backward Button
+                            PlayBackControlButton(systemName: "gobackward.10") {
+                                
+                            }
+                            Spacer()
+                            // MARK: play Button
+                            PlayBackControlButton(systemName: "play.circle.fill",fontSize: 44) {
+                                
+                            }
+                            Spacer()
+                            // MARK: Forward Button
+                            PlayBackControlButton(systemName: "goforward.10") {
+                                
+                            }
+                            Spacer()
+                            // MARK: Stop Button
+                            PlayBackControlButton(systemName: "stop.fill") {
+                                
+                            }
+                        }
                     }
-                    .foregroundColor(.white)
-                    .font(.caption)
-                    
-                    HStack{
-                        // MARK: Repeat Button
-                        PlayBackControlButton(systemName: "repeat") {
-                            
-                        }
-                        Spacer()
-                        // MARK: Backward Button
-                        PlayBackControlButton(systemName: "gobackward.10") {
-                            
-                        }
-                        Spacer()
-                        // MARK: play Button
-                        PlayBackControlButton(systemName: "play.circle.fill",fontSize: 44) {
-                            
-                        }
-                        Spacer()
-                        // MARK: Forward Button
-                        PlayBackControlButton(systemName: "goforward.10") {
-                            
-                        }
-                        Spacer()
-                        // MARK: Stop Button
-                        PlayBackControlButton(systemName: "stop.fill") {
-                            
-                        }
-                    }
+                    .padding(20)
                 }
-                .padding(20)
             }
+            
         }
         .onAppear{
             audioManager.startPlayer(track: meditationVM.meditation.track, isPreview: isPreview)

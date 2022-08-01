@@ -4,6 +4,7 @@ struct PlayView: View {
     @EnvironmentObject var audioManager: AudioManager
     var meditationVM: MeditationViewModel
     var isPreview: Bool = false
+    @State private var isEditing: Bool = false
     @State private var value: Double = 0.0
     @Environment(\.dismiss) var dismiss
     
@@ -55,6 +56,7 @@ struct PlayView: View {
                         // MARK: Playback timeline
                         Slider(value: $value, in: 0...player.duration) { editing in
                             print("editing", editing)
+                            isEditing = editing
                             if !editing {
                                 player.currentTime = value
                             } 
@@ -106,7 +108,7 @@ struct PlayView: View {
             audioManager.startPlayer(track: meditationVM.meditation.track, isPreview: isPreview)
         }
         .onReceive(timer) { _ in
-            guard let player = audioManager.player else { return }
+            guard let player = audioManager.player, !isEditing else { return }
             value = player.currentTime
         }
     }

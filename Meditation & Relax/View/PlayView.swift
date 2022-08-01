@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct PlayView: View {
+    @EnvironmentObject var audioManager: AudioManager
     var meditationVM: MeditationViewModel
     var isPreview: Bool = false
     @State private var value: Double = 0.0
@@ -89,14 +90,14 @@ struct PlayView: View {
             }
         }
         .onAppear{
-            AudioManager.shared.startPlayer(track: meditationVM.meditation.track, isPreview: isPreview)
+            audioManager.startPlayer(track: meditationVM.meditation.track, isPreview: isPreview)
         }
     }
     
     struct PlayView_Previews: PreviewProvider {
         static let meditationVM = MeditationViewModel(meditation: Meditation.data)
         static var previews: some View {
-            PlayView(meditationVM: meditationVM, isPreview: true)
+            PlayView(meditationVM: meditationVM, isPreview: true).environmentObject(AudioManager())
         }
     }
 }

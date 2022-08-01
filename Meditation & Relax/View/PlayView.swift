@@ -6,6 +6,12 @@ struct PlayView: View {
     var isPreview: Bool = false
     @State private var value: Double = 0.0
     @Environment(\.dismiss) var dismiss
+    
+    let timer = Timer
+        .publish(every: 0.5, on: .main, in: .common)
+        .autoconnect()
+    
+    
     var body: some View {
         ZStack {
             // MARK: Background Image

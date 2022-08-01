@@ -65,9 +65,9 @@ struct PlayView: View {
                         
                         // MARK: Playback time
                         HStack {
-                            Text("0:00")
+                            Text(DateComponentsFormatter.positional.string(from: player.currentTime) ?? "0:00")
                             Spacer()
-                            Text("\(DateComponentsFormatter.abbreviated.string(from: player.duration) ?? "0")")
+                            Text(DateComponentsFormatter.positional.string(from: player.duration - player.currentTime) ?? "0:00")
                         }
                         .foregroundColor(.white)
                         .font(.caption)

@@ -38,4 +38,11 @@ final class AudioManager: ObservableObject {
             player.play()
         }
     }
+    
+    func stop() {
+        guard let player = player else { return }
+        if player.isPlaying {
+            player.stop()
+        }
+    }
 }

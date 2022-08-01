@@ -35,6 +35,7 @@ struct PlayView: View {
                     Spacer()
                     
                     Button {
+                        audioManager.stop()
                         dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
@@ -95,7 +96,7 @@ struct PlayView: View {
                             Spacer()
                             // MARK: Stop Button
                             PlayBackControlButton(systemName: "stop.fill") {
-                                
+                                audioManager.stop()
                             }
                         }
                     }
